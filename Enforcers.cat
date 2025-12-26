@@ -8,8 +8,8 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Patrolman" hidden="false" id="9e75-6f98-a557-a973">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc0d-3e23-2c9d-50bd"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f378-a082-4e81-2905"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc0d-3e23-2c9d-50bd" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f378-a082-4e81-2905" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
             <infoLink name="patrolman" id="8e92-d09e-43f7-19ff" hidden="false" type="profile" targetId="5ac1-8404-6e6a-8999"/>
@@ -17,19 +17,25 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Primary Weapon" hidden="false" id="0d4d-cb58-ad4e-b020">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="543c-fd6c-0470-0c9d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ba-0caa-7120-734c"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="543c-fd6c-0470-0c9d" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ba-0caa-7120-734c" includeChildSelections="true"/>
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="cc90-c529-1cb3-d081" id="74b6-a195-09b3-38ee" primary="false" name="Pistols"/>
                 <categoryLink targetId="57c8-d14e-f60f-549d" id="aee2-81af-d591-ff4f" primary="false" name="SMGs"/>
                 <categoryLink targetId="e973-ca8f-8eca-37bb" id="d880-fec9-324b-d273" primary="false" name="Shotguns"/>
               </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Light Pistol" hidden="false" id="275a-0cb4-20a2-806e" type="selectionEntry" targetId="118b-7bc4-49b6-a45e"/>
+                <entryLink import="true" name="Combat Shotgun" hidden="false" id="b45b-ea33-72d7-e0aa" type="selectionEntry" targetId="debb-1be4-bb17-5960"/>
+                <entryLink import="true" name="Compact SMG" hidden="false" id="21cf-1a16-81a2-fc49" type="selectionEntry" targetId="67b5-7780-5eb6-0a31"/>
+                <entryLink import="true" name="No Primary Weapon" hidden="false" id="1c44-f22b-4725-87d6" type="selectionEntry" targetId="d721-0b76-eaf4-1003"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sidearm / Melee" hidden="false" id="b3b9-e517-d1c1-cfc8" defaultAmount="">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e8f-5314-db7e-531d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f44-e680-f222-62e2"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e8f-5314-db7e-531d" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f44-e680-f222-62e2" includeChildSelections="true"/>
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="cc90-c529-1cb3-d081" id="3502-61a5-36f3-94cd" primary="false" name="Pistols"/>
@@ -40,6 +46,7 @@
               </categoryLinks>
               <entryLinks>
                 <entryLink import="true" name="Light Pistol" hidden="false" id="d244-4382-8002-6fc6" type="selectionEntry" targetId="118b-7bc4-49b6-a45e" defaultAmount="1"/>
+                <entryLink import="true" name="Unarmed Strike" hidden="false" id="e543-a671-3718-7cb0" type="selectionEntry" targetId="8bc9-59bd-1839-b9a0"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -52,6 +59,28 @@
     <selectionEntry type="upgrade" import="true" name="Light Pistol" hidden="false" id="118b-7bc4-49b6-a45e">
       <categoryLinks>
         <categoryLink targetId="cc90-c529-1cb3-d081" id="9ae7-f846-9e23-6b12" primary="false" name="Pistols"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Compact SMG" hidden="false" id="67b5-7780-5eb6-0a31">
+      <categoryLinks>
+        <categoryLink targetId="57c8-d14e-f60f-549d" id="e77b-3518-a3e2-bb8d" primary="false" name="SMGs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="934f-c95a-9316-9e77" value="3"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combat Shotgun" hidden="false" id="debb-1be4-bb17-5960">
+      <categoryLinks>
+        <categoryLink targetId="e973-ca8f-8eca-37bb" id="05be-c348-4cb5-7874" primary="false" name="Shotguns"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="934f-c95a-9316-9e77" value="3"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="No Primary Weapon" hidden="false" id="d721-0b76-eaf4-1003"/>
+    <selectionEntry type="upgrade" import="true" name="Unarmed Strike" hidden="false" id="8bc9-59bd-1839-b9a0">
+      <categoryLinks>
+        <categoryLink targetId="2831-dc63-f827-e211" id="48fc-83cc-61e2-d15d" primary="false" name="Unarmed"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
