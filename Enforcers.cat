@@ -19,6 +19,7 @@
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="543c-fd6c-0470-0c9d" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ba-0caa-7120-734c" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec3d-eb34-54d9-df70"/>
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="cc90-c529-1cb3-d081" id="74b6-a195-09b3-38ee" primary="false" name="Pistols"/>
@@ -26,16 +27,33 @@
                 <categoryLink targetId="e973-ca8f-8eca-37bb" id="d880-fec9-324b-d273" primary="false" name="Shotguns"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="Light Pistol" hidden="false" id="275a-0cb4-20a2-806e" type="selectionEntry" targetId="118b-7bc4-49b6-a45e"/>
-                <entryLink import="true" name="Combat Shotgun" hidden="false" id="b45b-ea33-72d7-e0aa" type="selectionEntry" targetId="debb-1be4-bb17-5960"/>
-                <entryLink import="true" name="Compact SMG" hidden="false" id="21cf-1a16-81a2-fc49" type="selectionEntry" targetId="67b5-7780-5eb6-0a31"/>
-                <entryLink import="true" name="No Primary Weapon" hidden="false" id="1c44-f22b-4725-87d6" type="selectionEntry" targetId="d721-0b76-eaf4-1003"/>
+                <entryLink import="true" name="Light Pistol" hidden="false" id="275a-0cb4-20a2-806e" type="selectionEntry" targetId="118b-7bc4-49b6-a45e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8a9-2580-b094-536f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Combat Shotgun" hidden="false" id="b45b-ea33-72d7-e0aa" type="selectionEntry" targetId="debb-1be4-bb17-5960">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd33-108f-504e-bbde"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Compact SMG" hidden="false" id="21cf-1a16-81a2-fc49" type="selectionEntry" targetId="67b5-7780-5eb6-0a31">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="338c-761d-8feb-78eb"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="No Primary Weapon" hidden="false" id="1c44-f22b-4725-87d6" type="selectionEntry" targetId="d721-0b76-eaf4-1003">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c5d-8057-dd17-1a39"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sidearm / Melee" hidden="false" id="b3b9-e517-d1c1-cfc8" defaultAmount="">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e8f-5314-db7e-531d" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f44-e680-f222-62e2" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdf1-6219-41ba-382a"/>
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="cc90-c529-1cb3-d081" id="3502-61a5-36f3-94cd" primary="false" name="Pistols"/>
@@ -46,7 +64,11 @@
               </categoryLinks>
               <entryLinks>
                 <entryLink import="true" name="Light Pistol" hidden="false" id="d244-4382-8002-6fc6" type="selectionEntry" targetId="118b-7bc4-49b6-a45e" defaultAmount="1"/>
-                <entryLink import="true" name="Unarmed Strike" hidden="false" id="e543-a671-3718-7cb0" type="selectionEntry" targetId="8bc9-59bd-1839-b9a0"/>
+                <entryLink import="true" name="Unarmed Strike" hidden="false" id="e543-a671-3718-7cb0" type="selectionEntry" targetId="8bc9-59bd-1839-b9a0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54ab-8122-1b84-6fdc"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
