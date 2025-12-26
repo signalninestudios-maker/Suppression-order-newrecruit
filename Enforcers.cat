@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="3086-3361-9f00-dd19" name="Enforcers" gameSystemId="sys-b356-c697-3028-802e" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Patrolman" hidden="false" id="05ad-f54d-e93b-a71f">
+      <costs>
+        <cost name="Points" typeId="934f-c95a-9316-9e77" value="8"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Patrolman" hidden="false" id="9e75-6f98-a557-a973">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc0d-3e23-2c9d-50bd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f378-a082-4e81-2905"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="patrolman" id="8e92-d09e-43f7-19ff" hidden="false" type="profile" targetId="5ac1-8404-6e6a-8999"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="4f96-48e1-1d6a-a6d0" id="a881-cb0e-51ac-59be" primary="true" name="Ganger"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="patrolman" typeId="b67c-0824-d058-a471" typeName="Unit" hidden="false" id="5ac1-8404-6e6a-8999">
+      <characteristics>
+        <characteristic name="HP" typeId="f802-f753-8424-e32b">4</characteristic>
+        <characteristic name="Shoot" typeId="ae4e-e1d5-9732-ddd9">2</characteristic>
+        <characteristic name="Melee" typeId="7f21-03bb-6498-8a15">2</characteristic>
+        <characteristic name="Agility" typeId="3e1f-0ef1-ce7b-b306">2</characteristic>
+        <characteristic name="Resistance" typeId="2770-c9b7-84d8-6c34">2</characteristic>
+        <characteristic name="Edge" typeId="4a3d-9398-67da-9aa1">2</characteristic>
+        <characteristic name="Move" typeId="2447-84cc-4822-9b19">6</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Patrolman" hidden="false" id="bd6b-b78f-12ab-4fcc" targetId="05ad-f54d-e93b-a71f" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
