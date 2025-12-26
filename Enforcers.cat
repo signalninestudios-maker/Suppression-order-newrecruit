@@ -17,9 +17,10 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Primary Weapon" hidden="false" id="0d4d-cb58-ad4e-b020">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="543c-fd6c-0470-0c9d" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ba-0caa-7120-734c" includeChildSelections="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="543c-fd6c-0470-0c9d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ba-0caa-7120-734c" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec3d-eb34-54d9-df70"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="373b-feb1-fc02-7b86" includeChildSelections="true"/>
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="cc90-c529-1cb3-d081" id="74b6-a195-09b3-38ee" primary="false" name="Pistols"/>
@@ -54,6 +55,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e8f-5314-db7e-531d" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f44-e680-f222-62e2" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdf1-6219-41ba-382a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="638e-d21f-1990-36e6"/>
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="cc90-c529-1cb3-d081" id="3502-61a5-36f3-94cd" primary="false" name="Pistols"/>
@@ -63,7 +65,11 @@
                 <categoryLink targetId="7349-9179-36c7-4765" id="cab4-ac3d-a587-cc1a" primary="false" name="Blunt"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="Light Pistol" hidden="false" id="d244-4382-8002-6fc6" type="selectionEntry" targetId="118b-7bc4-49b6-a45e" defaultAmount="1"/>
+                <entryLink import="true" name="Light Pistol" hidden="false" id="d244-4382-8002-6fc6" type="selectionEntry" targetId="118b-7bc4-49b6-a45e" defaultAmount="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2a4-6866-ec74-dc51"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Unarmed Strike" hidden="false" id="e543-a671-3718-7cb0" type="selectionEntry" targetId="8bc9-59bd-1839-b9a0">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54ab-8122-1b84-6fdc"/>
