@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b518-a330-40d5-99c7" name="Enforcers" gameSystemId="sys-d98a-42d5-f6bb-8a9c" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" publicationId="86a1-1f96-d713-1aee" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Enforcers" id="bee9-e3a7-db78-4cf3" hidden="false"/>
+  </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="PatrolMan" hidden="false" id="f02a-4cde-6d3b-9b12">
+      <entryLinks>
+        <entryLink import="true" name="Slot - Primary (SMGs)" hidden="false" id="d5bd-93e3-a2c5-9bd9" type="selectionEntryGroup" targetId="b00c-9983-7a8e-ed6a"/>
+        <entryLink import="true" name="Slot - Sidearm (Pistols)" hidden="false" id="a19b-da45-08b4-67d6" type="selectionEntryGroup" targetId="66e5-1946-f03b-d1a1"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="R - Ganger" hidden="false" id="8e0a-c726-9853-b06e" targetId="0db6-c7a8-eb8f-525c" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="PatrolMan" hidden="false" id="2a59-435e-bb8d-7df7" targetId="f02a-4cde-6d3b-9b12" type="selectionEntry"/>
+  </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="R - Ganger" id="0db6-c7a8-eb8f-525c" hidden="false"/>
+  </categoryEntries>
+</catalogue>
